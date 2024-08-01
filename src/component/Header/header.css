@@ -1,0 +1,33 @@
+.header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon-block__icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header-icon-block__icon:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+#user-avatar {
+    width: 500px;
+    height: 30px;
+    padding-left: 40px;
+    background-image: url(user-avatar.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left;
+}
+
+#user-avatar__title {
+    font-size: 12px;
+}
+
+#user-avatar__company {
+    font-size: 10px;
+    color: #6F7172;
+}

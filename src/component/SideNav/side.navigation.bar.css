@@ -1,0 +1,84 @@
+.side-navigation-bar {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 160px;
+    height: 100vh;
+    border-right: 1px solid #DFE0E1;
+    margin-right: 20px;
+}
+
+.side-navigation-bar_min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32px;
+    height: 100vh;
+    padding: 10px;
+    border-left: 1px solid #DFE0E1;
+    border-right: 1px solid #DFE0E1;
+}
+
+.side-bar-title {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 41px;
+}
+
+.logo-servise {
+    width: 30px;
+    height: 30px;
+    background-image: url(logo_en+line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 40px;
+}
+
+.logo-servise:hover {
+    transform: rotate(10deg);
+}
+
+#ul-icon-bar li {
+    width: 24px;
+    height: 24px;
+}
+
+#ul-icon-bar:hover li {
+    cursor: pointer;
+}
+
+#ul-icon-bar li:not(:last-of-type) {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ul-icon-bar_big li:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.ul-icon-bar_big li:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#nav-icon,
+#new-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(arrow-up-circle_up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#new-icon {
+    background-image: url(arrow-up-circle.svg);
+}
+
+a {
+    color: #1D252C;
+}
