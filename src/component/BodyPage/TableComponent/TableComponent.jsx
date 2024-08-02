@@ -31,7 +31,6 @@ export function TableComponentBody (props) {
     return (
         comp.map((item) =>
             <>            
-            
                 <div className="table-component-result">
                     <div className="table-component-result__heading">
                         <div className="table-component-result__heading_left">
