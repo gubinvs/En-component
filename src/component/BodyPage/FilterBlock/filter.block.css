@@ -51,7 +51,8 @@
 }
 
 .filter-block__button:hover {
+     height: 15px;
     background-color: #FFFFFF;
-    border: 1px solid #E66A1B;
+    border: .5px solid #E66A1B;
     color: #E66A1B;
 }

@@ -9,12 +9,12 @@ export function TableComponentTitle () {
                 <div className="table-component-result__heading_left">
                     <input type="checkbox" className="tcrh__check"></input>
                     <img src="images/img-icon.svg" alt="Картинка" className="tcrh__img"></img>
-                    <div className="tcrh__vendor">Артикул</div>
-                    <div className="tcrh__name">Наименование комплектующих</div>
+                    <div className="tcrh__vendor w-120px">Артикул</div>
+                    <div className="tcrh__name">Наименование</div>
                 </div>
                 <div className="table-component-result__heading_right">
-                    <div className="tcrh__availability">Наличие</div>
-                    <div className="tcrh__price">Цена, ед</div>
+                    <div className="tcrh__availability w-70px">Наличие</div>
+                    <div className="tcrh__price w-70px">Цена, ед</div>
                     <div className="tcrh__count"></div> 
                     <div className="tcrh__button"></div>     
                 </div>
@@ -39,7 +39,7 @@ export function TableComponentBody (props) {
                         </div>
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
-                            <div className="tcrh__price w-70px">{item.price} р.</div>
+                            <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
                             <div className="tcrh__count">
                                 <div className="tcrh-count__decrement">-</div>
                                 <div className="tcrh-count__body">0</div>

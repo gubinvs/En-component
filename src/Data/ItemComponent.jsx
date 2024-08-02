@@ -17,7 +17,7 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 58,
-        price : "405,06"
+        price : "999,06"
     },
     {
         id : 3,
@@ -29,3 +29,4 @@ export const comp = [
         price : "3532,56"
     }
 ]
+
