@@ -2,6 +2,7 @@
 import "./body.catalog.page.css";
 import TitlePage from "./TitlePage/TitlePage";
 import SearchBlock from "./TitlePage/SearchBlock";
+import FilterBlock from "./FilterBlock/FilterBlock"
 
 function BodyCatalogPage (props) {
 
@@ -11,6 +12,7 @@ function BodyCatalogPage (props) {
             <TitlePage title={props.title} discr={props.discr} />
             <SearchBlock />
           </div>
+          <FilterBlock />
         </>
     )
 
