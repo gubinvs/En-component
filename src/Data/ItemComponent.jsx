@@ -1,6 +1,6 @@
 
 
-export const component = [
+export const comp = [
     {
         id : 1,
         check : true,

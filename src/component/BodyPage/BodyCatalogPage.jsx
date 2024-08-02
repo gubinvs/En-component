@@ -4,7 +4,7 @@ import TitlePage from "./TitlePage/TitlePage";
 import SearchBlock from "./TitlePage/SearchBlock";
 import FilterBlock from "./FilterBlock/FilterBlock"
 import { TableComponentBody, TableComponentTitle } from "./TableComponent/TableComponent";
-
+import { comp  } from "../../Data/ItemComponent";
 
 function BodyCatalogPage (props) {
 
@@ -16,7 +16,7 @@ function BodyCatalogPage (props) {
           </div>
           <FilterBlock />
           <TableComponentTitle />
-          <TableComponentBody />
+          <TableComponentBody item={comp} />
         </>
     )
 
