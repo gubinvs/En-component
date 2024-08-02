@@ -24,11 +24,14 @@ export function TableComponentTitle () {
     )
 }
 
+
 export function TableComponentBody (props) {
     const comp = props.item;
+    
     return (
         comp.map((item) =>
             <>            
+            
                 <div className="table-component-result">
                     <div className="table-component-result__heading">
                         <div className="table-component-result__heading_left">
@@ -41,9 +44,9 @@ export function TableComponentBody (props) {
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
                             <div className="tcrh__count">
-                                <div className="tcrh-count__decrement">-</div>
+                                <button className="tcrh-count__decrement">-</button>
                                 <div className="tcrh-count__body">0</div>
-                                <div className="tcrh-count__increment">+</div>
+                                <button className="tcrh-count__increment">+</button>
                             </div> 
                             <button className="tcrh__button" id="tcrh__button">Добавить</button>     
                         </div>
