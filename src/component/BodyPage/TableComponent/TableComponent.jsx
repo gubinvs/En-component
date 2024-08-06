@@ -43,7 +43,7 @@ export function TableComponentBody (props) {
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
                             <input type="number" min="0" className="tcrh__count tcrh-count__body"></input>
-                            <button className="tcrh__button" id="tcrh__button">Добавить</button>     
+                            <button className="tcrh__button">Добавить</button>     
                         </div>
                     </div>
                 </div>
