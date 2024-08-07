@@ -27,6 +27,7 @@ export function TableComponentTitle () {
 export function TableComponentBody (props) {
     const comp = props.item;
 
+ 
     return (
         comp.map((item) =>
             <>            
@@ -43,7 +44,7 @@ export function TableComponentBody (props) {
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
-                            <input type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
+                            <input onClick={CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
                             <button className="tcrh__button">Добавить</button>     
                         </div>
                     </div>
@@ -52,7 +53,6 @@ export function TableComponentBody (props) {
             )
         )
 }
-
 
 // Работа с checkbox выделяет все при нажатии в заголовке
 function CheckAll () {
@@ -64,8 +64,9 @@ function CheckAll () {
     })
 }
 
-function CheckTheBox () {
-    const input = document.getElementById('tcrh__count_1');
-    const check = document.getElementById('tcrh__check');
-    
+function CheckTheBox (count) {
+    let item = "tcrh__count_" + count;
+    const checkItem = document.getElementById('tcrh__count_' + count);
+    checkItem.checked = true;
+    console.log(item);
 }
