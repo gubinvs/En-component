@@ -41,8 +41,8 @@ export function TableComponentBody (props) {
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
-                            <input onClick={()=>InputEdit(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
-                            <button onClick={() => ButtonOnClick(item.id)} className="tcrh__button" id={"tcrh__button" + item.id}>Добавить</button>     
+                            <input onClick={CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
+                            <button className="tcrh__button">Добавить</button>     
                         </div>
                     </div>
                 </div>
@@ -61,11 +61,9 @@ function CheckAll () {
     })
 }
 
-
-function InputEdit (count) { 
-    const input = document.getElementById("tcrh__count_" + count)
-    const checkItem = document.getElementById("tcrh__check_" + count);
-    const buttonItem = document.getElementById("tcrh__button" + count);
+function CheckTheBox (count) {
+    let item = "tcrh__count_" + count;
+    const checkItem = document.getElementById('tcrh__count_' + count);
     checkItem.checked = true;
     buttonItem.className = "tcrh__button tcrh__button_add-value"
 
