@@ -41,8 +41,8 @@ export function TableComponentBody (props) {
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
-                            <input onClick={CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
-                            <button className="tcrh__button">Добавить</button>     
+                            <input onClick={() => CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
+                            <button onClick={()=>  ButtonOnClick(item.id)} className="tcrh__button" id={tcrh__button}>Добавить</button>     
                         </div>
                     </div>
                 </div>
