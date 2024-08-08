@@ -15,8 +15,7 @@ export function TableComponentTitle () {
                 <div className="table-component-result__heading_right">
                     <div className="tcrh__availability w-70px">Наличие</div>
                     <div className="tcrh__price w-70px">Цена, ед</div>
-                    <div className="tcrh__count">Кол-во</div> 
-                    <div className="tcrh__button"></div>     
+                    <div className="tcrh__count">Кол-во</div>    
                 </div>
             </div>
         </div>
@@ -25,9 +24,7 @@ export function TableComponentTitle () {
 }
 
 export function TableComponentBody (props) {
-    const comp = props.item;
-
- 
+    const comp = props.item; 
     return (
         comp.map((item) =>
             <>            
@@ -44,8 +41,8 @@ export function TableComponentBody (props) {
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
                             <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
-                            <input onClick={CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
-                            <button className="tcrh__button">Добавить</button>     
+                            <input onClick={()=>InputEdit(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
+                            <button onClick={() => ButtonOnClick(item.id)} className="tcrh__button" id={"tcrh__button" + item.id}>Добавить</button>     
                         </div>
                     </div>
                 </div>
@@ -64,9 +61,27 @@ function CheckAll () {
     })
 }
 
-function CheckTheBox (count) {
-    let item = "tcrh__count_" + count;
-    const checkItem = document.getElementById('tcrh__count_' + count);
+
+function InputEdit (count) { 
+    const input = document.getElementById("tcrh__count_" + count)
+    const checkItem = document.getElementById("tcrh__check_" + count);
+    const buttonItem = document.getElementById("tcrh__button" + count);
     checkItem.checked = true;
-    console.log(item);
+    buttonItem.className = "tcrh__button tcrh__button_add-value"
+
+    if (input.value == 0) {
+        checkItem.checked = false;
+        buttonItem.className = "tcrh__button"
+        buttonItem.innerHTML = "Добавить";
+        // Нужно добавить удаление данных из корзины!!!!!!!!!!
+    }
+
+}
+
+// При нажатии на кнопку добавить, меняется цвет кнопки и надпись в корзине
+function ButtonOnClick (count) {
+    const buttonItem = document.getElementById("tcrh__button" + count);
+    buttonItem.className = "tcrh__button tcrh__button_add-basket";
+    buttonItem.innerHTML = "В корзине";
+
 }

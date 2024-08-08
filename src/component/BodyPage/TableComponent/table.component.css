@@ -60,8 +60,21 @@
     width: 100px;
     height: 20px;
     font-size: 12px;
-    color: #6F7172;
-    cursor: pointer;;
+    background-color:  #FFFFFF;
+    border: 0.5px solid #DFE0E1;
+    color: #DFE0E1;
+}
+
+.tcrh__button_add-value {
+    border: 0.5px solid  #6F7172;
+    color:  #6F7172;
+    cursor: pointer;
+}
+
+.tcrh__button_add-basket {
+    background-color: #E66A1B;
+    border: 0.5px solid  #E66A1B;
+    color:  #FFFFFF;
 }
 
 .w-70px {
