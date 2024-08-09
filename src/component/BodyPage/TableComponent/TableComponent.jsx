@@ -31,7 +31,7 @@ export function TableComponentBody (props) {
                 <div className="table-component-result">
                     <div className="table-component-result__heading">
                         <div className="table-component-result__heading_left">
-                            <input type="checkbox" className="tcrh__check" id={"tcrh__check_" + item.id}></input>
+                            <input onClick={() => ClickCheck(item.id)} type="checkbox" className="tcrh__check" id={"tcrh__check_" + item.id}></input>
                             <a href={item.images} target="blank">
                                 <img src={item.images} alt="Картинка" className="tcrh__img"></img>
                             </a>
@@ -61,6 +61,20 @@ function CheckAll () {
     })
 }
 
+// Функция обнуляет input с количеством товара в строке таблицы при изменении статуса checkbox в строке товара и изменяет кнопку добавить
+function ClickCheck(count) {
+    const checkItem = document.getElementById('tcrh__check_' + count);
+    const buttonItem = document.getElementById("tcrh__button_" + count);
+    const input = document.getElementById("tcrh__count_" + count);
+    if (checkItem.checked == false) {
+        input.value = 0;
+        buttonItem.className = "tcrh__button"
+        buttonItem.innerHTML = "Добавить";
+    }
+
+};
+
+// Меняет состояние checkbox в строке товара при увеличении позиции в input
 function CheckTheBox (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     const checkItem = document.getElementById('tcrh__check_' + count);
