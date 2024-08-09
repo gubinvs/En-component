@@ -127,15 +127,19 @@ function LocalStoreAddBasketItem (count) {
     
     if (localStorage.getItem('basket_item') != null) {
         basketItem.push(JSON.parse(localStorage.getItem('basket_item'))); 
-        console.log("Добавил");
+        const f = JSON.stringify(basketItem);
+        console.log("Добавил" + f);
 
     }
     
     basketItem.forEach((i) => {
-        if (document.getElementById('tcrh__check_' + count).checked == true || i.vendorItem == vendorItem) {
+        if (document.getElementById('tcrh__check_' + count).checked == true && i.vendorItem == vendorItem) {
             newBascketItem.push({vendor : vendorItem, volume : valueItem});
+            console.log("Совпадение");
         } else {
           newBascketItem.push({vendor : i.vendorItem, volume : i.volume});  
+          console.log("Нет совпадения");
+          console.log(JSON.stringify(newBascketItem));
         }
 
     })
