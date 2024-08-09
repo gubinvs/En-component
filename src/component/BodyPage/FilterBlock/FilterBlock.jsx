@@ -11,7 +11,7 @@ function FilterBlock ()  {
                     </select>
                     <button className="filter-select-block__button">Применить фильтр</button>
                 </div>
-                <div className="filter-block__button">Добавить выбранное</div>
+                {/* <div className="filter-block__button">Добавить выбранное</div> */}
             </div>
         </>
     )

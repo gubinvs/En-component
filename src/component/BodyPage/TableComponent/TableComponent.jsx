@@ -35,7 +35,7 @@ export function TableComponentBody (props) {
                             <a href={item.images} target="blank">
                                 <img src={item.images} alt="Картинка" className="tcrh__img"></img>
                             </a>
-                            <div className="tcrh__vendor w-120px">{item.vendor}</div>
+                            <div className="tcrh__vendor w-120px" id={"tcrh__vendor" + item.id}>{item.vendor}</div>
                             <div className="tcrh__name">{item.name}</div>
                         </div>
                         <div className="table-component-result__heading_right">
@@ -104,9 +104,27 @@ function CheckTheBox (count) {
 
 }
 
-// При нажатии на кнопку добавить, меняется цвет кнопки и надпись в корзине
+// При нажатии на кнопку добавить, меняется цвет кнопки и надпись "в корзине"
+// Информация о данном товаре добавляется в localStorage
 function ButtonOnClick (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     buttonItem.className = "tcrh__button tcrh__button_add-basket";
     buttonItem.innerHTML = "В корзине";
+    LocalStoreAddBasketItem(count);
+}
+
+
+// Функция сохранения данных в localStorage
+function LocalStoreAddBasketItem (count) {
+    const vendorItem = document.getElementById("tcrh__vendor" + count).innerHTML;
+    const valueItem = document.getElementById("tcrh__count_" + count).value;
+
+    const basketItem = []
+
+    if (document.getElementById('tcrh__check_' + count) == true) {
+        localStorage.setItem("basket_item",  );
+    }
+
+
+
 }
