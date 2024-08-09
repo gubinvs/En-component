@@ -1,4 +1,5 @@
 import "./filter.block.css";
+import SearchBlock from "../TitlePage/SearchBlock";
 
 function FilterBlock ()  {
     return (
@@ -11,6 +12,7 @@ function FilterBlock ()  {
                     </select>
                     <button className="filter-select-block__button">Применить фильтр</button>
                 </div>
+                <SearchBlock />
                 {/* <div className="filter-block__button">Добавить выбранное</div> */}
             </div>
         </>

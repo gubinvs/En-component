@@ -83,6 +83,10 @@ function ClickCheck(count) {
         input.value = 0;
         buttonItem.className = "tcrh__button"
         buttonItem.innerHTML = "Добавить";
+    } else if (checkItem.checked == true) {
+        input.value = 1;
+        buttonItem.className = "tcrh__button tcrh__button_add-value"
+        buttonItem.innerHTML = "Добавить";
     }
 
 };
@@ -100,7 +104,7 @@ function CheckTheBox (count) {
         buttonItem.className = "tcrh__button"
         buttonItem.innerHTML = "Добавить";
         // Нужно добавить удаление данных из корзины!!!!!!!!!!
-    }
+    } 
 
 }
 
@@ -116,15 +120,38 @@ function ButtonOnClick (count) {
 
 // Функция сохранения данных в localStorage
 function LocalStoreAddBasketItem (count) {
+    const newBascketItem = [];
+    const basketItem = [];
     const vendorItem = document.getElementById("tcrh__vendor" + count).innerHTML;
     const valueItem = document.getElementById("tcrh__count_" + count).value;
-    const basketItem = JSON.parse(localStorage.getItem('basket_item'));
+    
+    if (localStorage.getItem('basket_item') != null) {
+        basketItem.push(JSON.parse(localStorage.getItem('basket_item'))); 
+        console.log("Добавил");
 
-    if (document.getElementById('tcrh__check_' + count).checked == true) {
-        basketItem.push({vendor : vendorItem, volume : valueItem});     
     }
+    
+    basketItem.forEach((i) => {
+        if (document.getElementById('tcrh__check_' + count).checked == true || i.vendorItem == vendorItem) {
+            newBascketItem.push({vendor : vendorItem, volume : valueItem});
+        } else {
+          newBascketItem.push({vendor : i.vendorItem, volume : i.volume});  
+        }
 
-    localStorage.setItem("basket_item", JSON.stringify(basketItem));
+    })
+    
+    // Если checkbox выделен, заполняем данные 
+    // if (document.getElementById('tcrh__check_' + count).checked == true) {
+    //     basketItem.push({vendor : vendorItem, volume : valueItem});     
+    // }
+
+    localStorage.setItem("basket_item", JSON.stringify(newBascketItem));
     console.log(localStorage.getItem('basket_item'));
+    //localStorage.removeItem('basket_item')
+
+}
+
+
+function LocalStoreDeleteBasketItem () {
 
 }

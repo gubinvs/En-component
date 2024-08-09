@@ -12,7 +12,6 @@ function BodyCatalogPage (props) {
         <>
           <div className="catalog-title-section">
             <TitlePage title={props.title} discr={props.discr} />
-            <SearchBlock />
           </div>
           <FilterBlock />
           <TableComponentTitle />
