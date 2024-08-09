@@ -118,13 +118,14 @@ function ButtonOnClick (count) {
 function LocalStoreAddBasketItem (count) {
     const vendorItem = document.getElementById("tcrh__vendor" + count).innerHTML;
     const valueItem = document.getElementById("tcrh__count_" + count).value;
+    const basketItem = [];
 
-    const basketItem = []
-
-    if (document.getElementById('tcrh__check_' + count) == true) {
-        localStorage.setItem("basket_item",  );
+    if (document.getElementById('tcrh__check_' + count).checked == true) {
+        const json = JSON.parse(localStorage.getItem('basket_item'));
+        basketItem.push(...json, {vendor : vendorItem, volume : valueItem});     
     }
 
-
+    localStorage.setItem("basket_item", JSON.stringify(newBbasketItem));
+    console.log(localStorage.getItem('basket_item'));
 
 }
