@@ -119,25 +119,24 @@ function ButtonOnClick (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     buttonItem.className = "tcrh__button tcrh__button_add-basket";
     buttonItem.innerHTML = "В корзине";
-    LocalStoreAddBasketItem(countItem);
+    LocalStoreAddBasketItem(count, countItem);
 }
 
 
 // Функция сохранения данных в localStorage
-function LocalStoreAddBasketItem (count) {
+function LocalStoreAddBasketItem (count, countItem) {
 
-    const countItem = count;
     const ckItem = [];
     const inputItem = [];
     const buttonItem = [];
 
-    for (let i = 0; i < countItem; i++) {
+    for (let i = 1; i <= countItem; i++) {
         ckItem.push(document.getElementById('tcrh__check_' + i));
         inputItem.push(document.getElementById("tcrh__count_" + i));
         buttonItem.push(document.getElementById("tcrh__button_" + i));
     }
 
-
+    console.log(inputItem[3]);
 
 }
 
