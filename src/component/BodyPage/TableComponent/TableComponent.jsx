@@ -40,12 +40,12 @@ export function TableComponentBody (props) {
                             <a href={item.images} target="blank">
                                 <img src={item.images} alt="Картинка" className="tcrh__img"></img>
                             </a>
-                            <div className="tcrh__vendor w-120px" id={"tcrh__vendor" + item.id}>{item.vendor}</div>
-                            <div className="tcrh__name">{item.name}</div>
+                            <div className="tcrh__vendor w-120px" id={"tcrh__vendor_" + item.id}>{item.vendor}</div>
+                            <div className="tcrh__name" id={"tcrh__name_" + item.id}>{item.name}</div>
                         </div>
                         <div className="table-component-result__heading_right">
                             <div className="tcrh__availability w-70px">{item.availability} шт.</div>
-                            <div className="tcrh__price w-70px">{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
+                            <div className="tcrh__price w-70px" id={"tcrh__price_" + item.id}>{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(item.price))}</div>
                             <input onClick={() => CheckTheBox(item.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + item.id}></input>
                             <button onClick={()=>  ButtonOnClick(item.id)} className="tcrh__button" id={"tcrh__button_" + item.id}>Добавить</button>     
                         </div>
@@ -119,28 +119,42 @@ function ButtonOnClick (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     buttonItem.className = "tcrh__button tcrh__button_add-basket";
     buttonItem.innerHTML = "В корзине";
-    LocalStoreAddBasketItem(count, countItem);
+    LocalStorageAddBasketItem(countItem);
 }
 
 
 // Функция сохранения данных в localStorage
-function LocalStoreAddBasketItem (count, countItem) {
-
+function LocalStorageAddBasketItem (countItem) {
+    const basketItem = [];
     const ckItem = [];
+    const tcrhVendor = [];
     const inputItem = [];
     const buttonItem = [];
+    
 
     for (let i = 1; i <= countItem; i++) {
-        ckItem.push(document.getElementById('tcrh__check_' + i));
-        inputItem.push(document.getElementById("tcrh__count_" + i));
+        ckItem.push(document.getElementById('tcrh__check_' + i).checked);
+        tcrhVendor.push(document.getElementById("tcrh__vendor_" + i).innerHTML);
+        inputItem.push(document.getElementById("tcrh__count_" + i).value);
         buttonItem.push(document.getElementById("tcrh__button_" + i));
+        
+
     }
 
-    console.log(inputItem[3]);
+    for (let i = 0; i < countItem; i++) {
+        if (ckItem[i] == true) {
+           basketItem.push({vendor : tcrhVendor[i], volume :  inputItem[i]}); 
+        }
+        buttonItem[i].className = "tcrh__button tcrh__button_add-basket";
+    }
 
+    var json = JSON.stringify(basketItem);
+    localStorage.setItem("basket_item", json);
+    console.log(localStorage.getItem("basket_item"));
+    
 }
 
 
-function LocalStoreDeleteBasketItem () {
+function LocalStorageDeleteBasketItem () {
 
 }
