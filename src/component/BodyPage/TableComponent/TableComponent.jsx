@@ -8,7 +8,6 @@ import CheckTheBox from "./CheckTheBox";
 
 let countItem; // Количество строк в формируемой таблице (глобальная переменная)
 
-
 export function TableComponentTitle () {
     return (
         <>
@@ -60,8 +59,10 @@ export function TableComponentBody (props) {
         )
 }
 
+
 // При нажатии на кнопку добавить, меняется цвет кнопки и надпись "в корзине"
 // Информация о данном товаре добавляется в localStorage
+// Не перемещать в отдельный файл, используется глобальная переменная countItem
 function ButtonOnClick (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     buttonItem.className = "tcrh__button tcrh__button_add-basket";
