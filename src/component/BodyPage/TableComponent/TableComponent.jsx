@@ -138,14 +138,16 @@ function LocalStorageAddBasketItem (countItem) {
         inputItem.push(document.getElementById("tcrh__count_" + i).value);
         buttonItem.push(document.getElementById("tcrh__button_" + i));
         
-
     }
 
     for (let i = 0; i < countItem; i++) {
         if (ckItem[i] == true) {
            basketItem.push({vendor : tcrhVendor[i], volume :  inputItem[i]}); 
         }
-        buttonItem[i].className = "tcrh__button tcrh__button_add-basket";
+        if (inputItem[i] != 0) {
+            buttonItem[i].className = "tcrh__button tcrh__button_add-basket"; 
+        }
+       
     }
 
     var json = JSON.stringify(basketItem);
