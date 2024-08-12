@@ -1,6 +1,10 @@
 import "./table.component.css"
 
 
+
+let countItem; // Количество строк в формируемой таблице (глобальная переменная)
+
+
 export function TableComponentTitle () {
     return (
         <>
@@ -25,6 +29,7 @@ export function TableComponentTitle () {
 
 export function TableComponentBody (props) {
     const comp = props.item; 
+    countItem = Number(comp.at(-1).id);// получение последнего элемента массива
     return (
         comp.map((item) =>
             <>            
@@ -114,44 +119,25 @@ function ButtonOnClick (count) {
     const buttonItem = document.getElementById("tcrh__button_" + count);
     buttonItem.className = "tcrh__button tcrh__button_add-basket";
     buttonItem.innerHTML = "В корзине";
-    LocalStoreAddBasketItem(count);
+    LocalStoreAddBasketItem(countItem);
 }
 
 
 // Функция сохранения данных в localStorage
 function LocalStoreAddBasketItem (count) {
-    const newBascketItem = [];
-    const basketItem = [];
-    const vendorItem = document.getElementById("tcrh__vendor" + count).innerHTML;
-    const valueItem = document.getElementById("tcrh__count_" + count).value;
-    
-    if (localStorage.getItem('basket_item') != null) {
-        basketItem.push(JSON.parse(localStorage.getItem('basket_item'))); 
-        const f = JSON.stringify(basketItem);
-        console.log("Добавил" + f);
 
+    const countItem = count;
+    const ckItem = [];
+    const inputItem = [];
+    const buttonItem = [];
+
+    for (let i = 0; i < countItem; i++) {
+        ckItem.push(document.getElementById('tcrh__check_' + i));
+        inputItem.push(document.getElementById("tcrh__count_" + i));
+        buttonItem.push(document.getElementById("tcrh__button_" + i));
     }
-    
-    basketItem.forEach((i) => {
-        if (document.getElementById('tcrh__check_' + count).checked == true && i.vendorItem == vendorItem) {
-            newBascketItem.push({vendor : vendorItem, volume : valueItem});
-            console.log("Совпадение");
-        } else {
-          newBascketItem.push({vendor : i.vendorItem, volume : i.volume});  
-          console.log("Нет совпадения");
-          console.log(JSON.stringify(newBascketItem));
-        }
 
-    })
-    
-    // Если checkbox выделен, заполняем данные 
-    // if (document.getElementById('tcrh__check_' + count).checked == true) {
-    //     basketItem.push({vendor : vendorItem, volume : valueItem});     
-    // }
 
-    localStorage.setItem("basket_item", JSON.stringify(newBascketItem));
-    console.log(localStorage.getItem('basket_item'));
-    //localStorage.removeItem('basket_item')
 
 }
 
