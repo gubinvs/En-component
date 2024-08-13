@@ -34,12 +34,17 @@ export function TableComponentBody (props) {
     countItem = Number(comp.at(-1).id);
     
 
-    const newCompArr = comp.slice(0, 10); // разделяем массив
+    const newCompArr = comp.slice(0, 5); // разделяем массив
 
     return (
         <>
             <TableComponentRow row={newCompArr}/> 
-    
+            <ul className="nav-page-list">
+                <div className="nav-page-icon nav-page-icon__active">1</div>
+                <div className="nav-page-icon">2</div>
+                <div className="nav-page-icon">3</div>   
+            </ul>
+            
         </>
     )
 }

@@ -5,6 +5,7 @@
     margin-bottom: 4px;
 }
 
+
 .table-component-result:hover {
     background-color: #F7F7F5;
 }
@@ -12,6 +13,7 @@
 .table-component-result_title {
     margin-bottom: 8px;
 }
+
 .table-component-result__heading {
     display: flex;
     justify-content: space-between;
@@ -89,4 +91,32 @@
     width: 120px;
 }
 
+.nav-page-list {
+    display: flex;
+}
 
+.nav-page-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #DFE0E1;
+    color: #DFE0E1;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-page-icon:hover {
+    border: 1px solid #6F7172;
+    color: #6F7172;
+}
+
+.nav-page-icon:not(:last-of-type) {
+    margin-right: 2px;
+}
+
+.nav-page-icon__active {
+    border: 1px solid #6F7172;
+    color: #E66A1B;
+}
