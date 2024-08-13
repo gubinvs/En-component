@@ -34,12 +34,10 @@ export function TableComponentBody (props) {
     countItem = Number(comp.at(-1).id);
     
     let maxItem = 10; // максимальное количество выводимых на экран строк таблицы
-    let iteration = Math.ceil(countItem / maxItem); // на сколько частей делиться массив
-    const compSplice = []; // новый массив содержащий отрезки основного массива
-
+    const newCompArr = comp.slice(0, 10); // разделяем массив
 
     return (
-        comp.map(
+        newCompArr.map(
             (item) =>
                 <TableComponentRow row={item}/>
         )
