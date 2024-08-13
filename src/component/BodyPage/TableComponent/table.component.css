@@ -5,6 +5,10 @@
     margin-bottom: 4px;
 }
 
+.table-component-result:hover {
+    background-color: #F7F7F5;
+}
+
 .table-component-result_title {
     margin-bottom: 8px;
 }
