@@ -33,13 +33,13 @@ export function TableComponentBody (props) {
     // получение последнего элемента массива, что будет являться количеством элементов в массиве
     countItem = Number(comp.at(-1).id);
     
-    let maxItem = 10; // максимальное количество выводимых на экран строк таблицы
+
     const newCompArr = comp.slice(0, 10); // разделяем массив
 
     return (
-        newCompArr.map(
-            (item) =>
-                <TableComponentRow row={item}/>
-        )
+        <>
+            <TableComponentRow row={newCompArr}/> 
+    
+        </>
     )
 }

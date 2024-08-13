@@ -4,9 +4,9 @@ import CheckTheBox from "./CheckTheBox";
 
 
 function TableComponentRow (props) {
-const row = props.row;
-    return (
-        <>            
+const e = props.row;
+    return (  
+        e.map((row) =>   
             <div className="table-component-result">
                 <div className="table-component-result__heading">
                     <div className="table-component-result__heading_left">
@@ -25,7 +25,7 @@ const row = props.row;
                     </div>
                 </div>
             </div>
-        </>
+        )
     )
 }
 
