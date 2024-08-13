@@ -34,15 +34,9 @@ export function TableComponentBody (props) {
     countItem = Number(comp.at(-1).id);
     
     let maxItem = 10; // максимальное количество выводимых на экран строк таблицы
-    let iteration = Math.ceil(countItem / maxItem);
+    let iteration = Math.ceil(countItem / maxItem); // на сколько частей делиться массив
     const compSplice = []; // новый массив содержащий отрезки основного массива
 
-    console.log(iteration);
-    // Формирование отрезков массива
-    for (let i = 0; i <= iteration; i++) {
-        
-
-    }
 
     return (
         comp.map(
