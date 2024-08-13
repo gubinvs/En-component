@@ -64,8 +64,10 @@ export function TableComponentBody (props) {
 // Информация о данном товаре добавляется в localStorage
 // Не перемещать в отдельный файл, используется глобальная переменная countItem
 function ButtonOnClick (count) {
-    const buttonItem = document.getElementById("tcrh__button_" + count);
-    buttonItem.className = "tcrh__button tcrh__button_add-basket";
-    buttonItem.innerHTML = "В корзине";
-    LocalStorageAddBasketItem(countItem);
+    if (document.getElementById("tcrh__count_" + count).value != 0) {
+        const buttonItem = document.getElementById("tcrh__button_" + count);
+        buttonItem.className = "tcrh__button tcrh__button_add-basket";
+        buttonItem.innerHTML = "В корзине";
+        LocalStorageAddBasketItem(countItem);  
+    }
 }
