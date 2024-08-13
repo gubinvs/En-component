@@ -1,6 +1,17 @@
-
+import {TableComponentBody} from "./TableComponent";
 
 function NavPageList (props) {
+    return (
+        <>
+            <ul className="nav-page-list">
+                <CreteLiElement itemPage={props.itemPage} activePage={props.activePage}/>
+            </ul>
+        </>
+    )
+}
+
+
+function CreteLiElement (props) {
     const item = props.itemPage;
     const e = [];
     let count = 1;
@@ -17,16 +28,12 @@ function NavPageList (props) {
         }
         count++;
     }
-
     return (
         e.map((x) =>
-              <li className={x.cls}>{x.num}</li>  
+            <li className={x.cls}>{x.num}</li>  
         )
     )
 }
 
 
 export default NavPageList;
-
-
-

@@ -36,15 +36,17 @@ export function TableComponentBody (props) {
     let maxItem = 5;
     let firstItem = 0;
     let countPage = Math.ceil(countItem / maxItem);
+
+
+
     const newCompArr = comp.slice(firstItem, maxItem); // разделяем массив
 
     return (
         <>
             <TableComponentRow row={newCompArr}/> 
-            <ul className="nav-page-list">
-                <NavPageList itemPage={countPage} activePage="1"/>
-            </ul>
-
+            <NavPageList itemPage={countPage} activePage="3"/>
         </>
     )
 }
+
+
