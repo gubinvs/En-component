@@ -122,5 +122,6 @@
 .nav-page-icon__active {
     border: 1px solid #6F7172;
     color: #6F7172;
+    background-color: #F7F7F5;
     cursor: default;
 }

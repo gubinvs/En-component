@@ -33,17 +33,18 @@ export function TableComponentBody (props) {
     const comp = props.item; 
     // получение последнего элемента массива, что будет являться количеством элементов в массиве
     countItem = Number(comp.at(-1).id);
-    
-
-    const newCompArr = comp.slice(0, 5); // разделяем массив
+    let maxItem = 5;
+    let firstItem = 0;
+    let countPage = Math.ceil(countItem / maxItem);
+    const newCompArr = comp.slice(firstItem, maxItem); // разделяем массив
 
     return (
         <>
             <TableComponentRow row={newCompArr}/> 
             <ul className="nav-page-list">
-                <li className="nav-page-icon nav-page-icon__active">1</li>
+                <NavPageList itemPage={countPage} activePage="1"/>
             </ul>
-            
+
         </>
     )
 }
