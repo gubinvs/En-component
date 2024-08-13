@@ -5,9 +5,12 @@
     margin-bottom: 4px;
 }
 
-
 .table-component-result:hover {
     background-color: #F7F7F5;
+}
+
+.table-component-result:last-of-type {
+    margin-bottom: 20px;
 }
 
 .table-component-result_title {
@@ -118,5 +121,6 @@
 
 .nav-page-icon__active {
     border: 1px solid #6F7172;
-    color: #E66A1B;
+    color: #6F7172;
+    cursor: default;
 }

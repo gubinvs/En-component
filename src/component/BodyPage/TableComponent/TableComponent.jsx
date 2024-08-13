@@ -1,6 +1,7 @@
 import "./table.component.css"
 import CheckAll from "./CheckAll";
 import TableComponentRow from "./TableComponentRow";
+import NavPageList from "./NavPageList";
 
 
 
@@ -40,9 +41,7 @@ export function TableComponentBody (props) {
         <>
             <TableComponentRow row={newCompArr}/> 
             <ul className="nav-page-list">
-                <div className="nav-page-icon nav-page-icon__active">1</div>
-                <div className="nav-page-icon">2</div>
-                <div className="nav-page-icon">3</div>   
+                <li className="nav-page-icon nav-page-icon__active">1</li>
             </ul>
             
         </>
