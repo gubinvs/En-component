@@ -55,10 +55,19 @@ export function TableComponentBody (props) {
 
     function OnClick (item) {
         setActivePage(item);
-        setFirstItem(maxItem * item);
-        setLastItem(lastItem + maxItem);  
+        
+       
+        
+        if (item > 1) {
+            setFirstItem(maxItem * item);
+            setLastItem((maxItem * item) + maxItem);
+        } else if (item = 1) {
+            setFirstItem(0);
+        } 
+         console.log(item);
     }
 
+   
     console.log("Первый элемент = " + firstItem);
     console.log("Последний элемент = " + lastItem);
     return (
