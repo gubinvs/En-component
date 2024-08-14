@@ -1,7 +1,7 @@
 import "./table.component.css"
 import CheckAll from "./CheckAll";
 import TableComponentRow from "./TableComponentRow";
-import NavPageList from "./NavPageList";
+import { useState } from "react";
 
 
 
@@ -32,19 +32,46 @@ export function TableComponentTitle () {
 export function TableComponentBody (props) {
     const comp = props.item; 
     // получение последнего элемента массива, что будет являться количеством элементов в массиве
-    countItem = Number(comp.at(-1).id);
-    let maxItem = 5;
-    let firstItem = 0;
-    let countPage = Math.ceil(countItem / maxItem);
+    countItem = Number(comp.at(-1).id); // количество элементов во входящем массиве
+    let count = 1; // счетчик этераций
+    let maxItem = 5; // максимальное количество строк таблицы на странице
+    let countPage = Math.ceil(countItem / maxItem); // получаем количество страниц, округлаяя до полного числа в большую сторону
+    const [lastItem, setLastItem] = useState(maxItem) // до этого элемента массива отображаются данные на странице
+    const [activePage, setActivePage] = useState(1); // активная страница с данными
+    const [firstItem, setFirstItem] = useState(0); // Первый элемент массива для отображения на странице
+    const [newCompArr, setNewCompArr] = useState(comp.slice(firstItem, maxItem)) ; // разделяем массив по установленных критериям
+    const nativeClass = "nav-page-icon"; // класс li элемента по умолчанию
+    const activeClass = "nav-page-icon nav-page-icon__active"; // класс элемента li при нахождении на текущей странице
+    const e = [];
+    for (let i = 1; i <= countPage; i++) {
+        
+        if (count == activePage) {
+           e.push({num : i , class : activeClass}); 
+        } else {
+            e.push({num : i , class : nativeClass}); 
+        }
+        count++;
+    }
 
+    function OnClick (item) {
+        setActivePage(item);
+        setFirstItem(maxItem * item);
+        setLastItem(lastItem + maxItem);  
+    }
 
-
-    const newCompArr = comp.slice(firstItem, maxItem); // разделяем массив
-
+    console.log("Первый элемент = " + firstItem);
+    console.log("Последний элемент = " + lastItem);
     return (
         <>
             <TableComponentRow row={newCompArr}/> 
-            <NavPageList itemPage={countPage} activePage="3"/>
+            <ul className="nav-page-list">
+                {
+                     e.map((x) =>
+                        <li className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
+                    )
+                }
+            </ul>
+            
         </>
     )
 }
