@@ -1,33 +1,12 @@
 import "./table.component.css"
-import CheckAll from "./CheckAll";
 import TableComponentRow from "./TableComponentRow";
 import { useState } from "react";
+import TableComponentTitle from "./TableComponentTitle"
 
 
 
 let countItem; // Количество строк в формируемой таблице (глобальная переменная)
 
-export function TableComponentTitle () {
-    return (
-        <>
-        <div className="table-component-result table-component-result_title">
-            <div className="table-component-result__heading">
-                <div className="table-component-result__heading_left">
-                    <input onClick={CheckAll} type="checkbox" className="tcrh__check" id="tcrh__check_all"></input>
-                    <img src="images/img-icon.svg" alt="Картинка" className="tcrh__img"></img>
-                    <div className="tcrh__vendor w-120px">Артикул</div>
-                    <div className="tcrh__name">Наименование</div>
-                </div>
-                <div className="table-component-result__heading_right">
-                    <div className="tcrh__availability w-70px">Наличие</div>
-                    <div className="tcrh__price w-70px">Цена, ед</div>
-                    <div className="tcrh__count">Кол-во</div>    
-                </div>
-            </div>
-        </div>
-        </>
-    )
-}
 
 export function TableComponentBody (props) {
     const comp = props.item; 
@@ -42,6 +21,7 @@ export function TableComponentBody (props) {
     const [newCompArr, setNewCompArr] = useState(comp.slice(firstItem, maxItem)) ; // разделяем массив по установленных критериям
     const nativeClass = "nav-page-icon"; // класс li элемента по умолчанию
     const activeClass = "nav-page-icon nav-page-icon__active"; // класс элемента li при нахождении на текущей странице
+    
     const e = [];
     for (let i = 1; i <= countPage; i++) {
         
@@ -52,7 +32,6 @@ export function TableComponentBody (props) {
         }
         count++;
     }
-
 
     function OnClick (item) {
         setActivePage(item);
@@ -65,20 +44,31 @@ export function TableComponentBody (props) {
             setLastItem(maxItem);
             setNewCompArr(comp.slice(0, maxItem)); 
         }
+    }    
+    function NavPageList () {
+        return (
+            <ul className="nav-page-list">
+                <div className="nav-page-list__title">Страницы:</div>
+                {
+                    e.map((x) =>
+                        <li className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
+                    )
+                }
+            </ul>   
+        )
     }
 
     return (
         <>
-            <TableComponentRow row={newCompArr}/> 
-            <ul className="nav-page-list">
-                {
-                     e.map((x) =>
-                        <li className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
-                    )
-                }
-            </ul>
+            <div className="table-component-section">
+                <NavPageList /> 
+                <TableComponentTitle />
+                <TableComponentRow row={newCompArr}/> 
+                <NavPageList />
+            </div>
         </>
     )
 }
 
 
+export default TableComponentBody;

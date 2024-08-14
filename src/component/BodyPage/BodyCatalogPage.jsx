@@ -3,7 +3,7 @@ import "./body.catalog.page.css";
 import TitlePage from "./TitlePage/TitlePage";
 import SearchBlock from "./TitlePage/SearchBlock";
 import FilterBlock from "./FilterBlock/FilterBlock"
-import { TableComponentBody, TableComponentTitle } from "./TableComponent/TableComponent";
+import TableComponentBody  from "./TableComponent/TableComponent";
 import { comp  } from "../../Data/ItemComponent";
 
 function BodyCatalogPage (props) {
@@ -14,7 +14,6 @@ function BodyCatalogPage (props) {
             <TitlePage title={props.title} discr={props.discr} />
           </div>
           <FilterBlock />
-          <TableComponentTitle />
           <TableComponentBody item={comp} />
         </>
     )
