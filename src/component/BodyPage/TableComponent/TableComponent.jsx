@@ -34,7 +34,7 @@ export function TableComponentBody (props) {
     // получение последнего элемента массива, что будет являться количеством элементов в массиве
     countItem = Number(comp.at(-1).id); // количество элементов во входящем массиве
     let count = 1; // счетчик этераций
-    let maxItem = 5; // максимальное количество строк таблицы на странице
+    let maxItem = 10; // максимальное количество строк таблицы на странице
     let countPage = Math.ceil(countItem / maxItem); // получаем количество страниц, округлаяя до полного числа в большую сторону
     const [lastItem, setLastItem] = useState(maxItem) // до этого элемента массива отображаются данные на странице
     const [activePage, setActivePage] = useState(1); // активная страница с данными
@@ -53,18 +53,22 @@ export function TableComponentBody (props) {
         count++;
     }
 
+
     function OnClick (item) {
         setActivePage(item);
-        
-       
-        
         if (item > 1) {
-            setFirstItem(maxItem * item);
-            setLastItem((maxItem * item) + maxItem);
-        } else if (item = 1) {
+            setFirstItem((maxItem * item) - maxItem);
+            setLastItem(maxItem * item);
+            setNewCompArr(comp.slice(firstItem, lastItem));
+        } else if (item == 1) {
             setFirstItem(0);
-        } 
-         console.log(item);
+            setLastItem(maxItem);
+            setNewCompArr(comp.slice(0, maxItem)); 
+        }
+
+        
+        
+       console.log(item);
     }
 
    
