@@ -96,6 +96,7 @@
 
 .nav-page-list {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .nav-page-icon {

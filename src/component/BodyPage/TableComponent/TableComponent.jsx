@@ -66,6 +66,7 @@ export function TableComponentBody (props) {
             setNewCompArr(comp.slice(0, maxItem)); 
         }
     }
+
     return (
         <>
             <TableComponentRow row={newCompArr}/> 
@@ -76,7 +77,6 @@ export function TableComponentBody (props) {
                     )
                 }
             </ul>
-            
         </>
     )
 }
