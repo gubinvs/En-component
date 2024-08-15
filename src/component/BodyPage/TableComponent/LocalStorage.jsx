@@ -26,13 +26,13 @@ function LocalStorageAddBasketItem (countItem) {
         
     }
 
-    console.log(JSON.stringify(buttonItem));
-
     for (let i = 0; i < countItem; i++) {
         if (ckItem[i] == true) {
            basketItem.push({vendor : tcrhVendor[i], volume :  inputItem[i]}); 
         } else if (inputItem[i] != 0) {
-            buttonItem[i].className = "tcrh__button tcrh__button_add-basket"; 
+            if (buttonItem[i] != null) {
+               buttonItem[i].className = "tcrh__button tcrh__button_add-basket";  
+            }
         }
        
     }
