@@ -51,7 +51,7 @@ export function TableComponentBody (props) {
                 <div className="nav-page-list__title">Страница:</div>
                 {
                     e.map((x) =>
-                        <li className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
+                        <li key={x.num} className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
                     )
                 }
             </ul>   

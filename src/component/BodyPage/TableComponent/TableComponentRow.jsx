@@ -2,17 +2,22 @@ import LocalStorageAddBasketItem from "./LocalStorage";
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
 import { countItem } from "./TableComponent";
+import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
-    const e = props.row;
+    const array = props.row;
+
+    const basketItem = JSON.parse(localStorage.getItem("basket_item"));
+    console.log(basketItem);
+
 
     return (  
-        e.map((row) =>   
+        array.map((row) =>   
             <div className="table-component-result">
                 <div className="table-component-result__heading">
                     <div className="table-component-result__heading_left">
-                        <input onClick={() => ClickCheck(row.id)} type="checkbox" className="tcrh__check" id={"tcrh__check_" + row.id}></input>
+                        <input onClick={() => ClickCheck(row.id)} type="checkbox" className="tcrh__check" id={"tcrh__check_" + row.id} key={"check_" + row.id}></input>
                         <a href={row.images} target="blank">
                             <img src={row.images} alt="Картинка" className="tcrh__img"></img>
                         </a>
@@ -22,8 +27,8 @@ function TableComponentRow (props) {
                     <div className="table-component-result__heading_right">
                         <div className="tcrh__availability w-70px">{row.availability} шт.</div>
                         <div className="tcrh__price w-70px" id={"tcrh__price_" + row.id}>{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(row.price))}</div>
-                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id}></input>
-                        <button onClick={()=>  ButtonOnClick(row.id)} className="tcrh__button" id={"tcrh__button_" + row.id}>Добавить</button>     
+                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}></input>
+                        <button onClick={()=>  ButtonOnClick(row.id)} className="tcrh__button" id={"tcrh__button_" + row.id} key={"button_" + row.id}>Добавить</button>     
                     </div>
                 </div>
             </div>
@@ -43,6 +48,7 @@ function ButtonOnClick (count) {
         buttonItem.innerHTML = "В корзине";
         // Передаваемая информация в функцию: 
         // - countItem - всего элементов в массиве
-        LocalStorageAddBasketItem(countItem);  
+        //LocalStorageAddBasketItem(countItem);
+        AddBasketItemLocalStorage(count);
     }
 }
