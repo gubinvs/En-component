@@ -3,6 +3,7 @@ function ClickCheck(count) {
     const checkItem = document.getElementById('tcrh__check_' + count);
     const buttonItem = document.getElementById("tcrh__button_" + count);
     const input = document.getElementById("tcrh__count_" + count);
+    
     if (checkItem.checked == false) {
         input.value = 0;
         buttonItem.className = "tcrh__button"

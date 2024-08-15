@@ -48,7 +48,7 @@ export function TableComponentBody (props) {
     function NavPageList () {
         return (
             <ul className="nav-page-list">
-                <div className="nav-page-list__title">Страницы:</div>
+                <div className="nav-page-list__title">Страница:</div>
                 {
                     e.map((x) =>
                         <li className={x.class} onClick={() => OnClick(x.num)}>{x.num}</li>  
