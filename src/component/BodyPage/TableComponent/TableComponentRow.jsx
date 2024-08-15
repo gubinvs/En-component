@@ -6,7 +6,6 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 function TableComponentRow (props) {
     const array = props.row;
-
     return (  
         array.map((row) =>   
             <div className="table-component-result">

@@ -6,6 +6,7 @@ import SideNavMin from './component/SideNav/SideNavMin'
 import BodyCatalogPage from './component/BodyPage/BodyCatalogPage'
 
 
+
 ReactDOM.createRoot(document.getElementById('side-navigation-min')).render(
   <React.StrictMode>
    <SideNavMin />
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('side-navigation')).render(
 ReactDOM.createRoot(document.getElementById('header')).render(
   <React.StrictMode>
    <Header/>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
 
 ReactDOM.createRoot(document.getElementById('main-catalog')).render(
