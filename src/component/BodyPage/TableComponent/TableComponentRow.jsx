@@ -1,10 +1,12 @@
 import LocalStorageAddBasketItem from "./LocalStorage";
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
+import { countItem } from "./TableComponent";
 
 
 function TableComponentRow (props) {
-const e = props.row;
+    const e = props.row;
+
     return (  
         e.map((row) =>   
             <div className="table-component-result">
@@ -39,6 +41,8 @@ function ButtonOnClick (count) {
         const buttonItem = document.getElementById("tcrh__button_" + count);
         buttonItem.className = "tcrh__button tcrh__button_add-basket";
         buttonItem.innerHTML = "В корзине";
+        // Передаваемая информация в функцию: 
+        // - countItem - всего элементов в массиве
         LocalStorageAddBasketItem(countItem);  
     }
 }

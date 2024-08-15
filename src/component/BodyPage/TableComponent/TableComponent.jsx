@@ -5,7 +5,7 @@ import TableComponentTitle from "./TableComponentTitle"
 
 
 
-let countItem; // Количество строк в формируемой таблице (глобальная переменная)
+export let countItem = 0; // Количество строк в формируемой таблице (глобальная переменная)
 
 
 export function TableComponentBody (props) {
