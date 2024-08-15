@@ -10,7 +10,7 @@ function AddBasketItemLocalStorage(count) {
     localStorage.setItem("basket_item", JSON.stringify(basketItem))
 
     //console.log(JSON.stringify(basketItem));
-    //console.log("localSto: " + localStorage.getItem("basket_item"));
+    console.log("localSto: " + localStorage.getItem("basket_item"));
 
 }
 
