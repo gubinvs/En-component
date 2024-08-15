@@ -13,7 +13,7 @@ export function TableComponentBody (props) {
     // получение последнего элемента массива, что будет являться количеством элементов в массиве
     countItem = Number(comp.at(-1).id); // количество элементов во входящем массиве
     let count = 1; // счетчик этераций
-    let maxItem = 20; // максимальное количество строк таблицы на странице
+    let maxItem = 8; // максимальное количество строк таблицы на странице
     let countPage = Math.ceil(countItem / maxItem); // получаем количество страниц, округлаяя до полного числа в большую сторону
     const [lastItem, setLastItem] = useState(maxItem) // до этого элемента массива отображаются данные на странице
     const [activePage, setActivePage] = useState(1); // активная страница с данными

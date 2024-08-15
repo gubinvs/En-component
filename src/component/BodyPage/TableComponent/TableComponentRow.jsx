@@ -1,16 +1,11 @@
 import LocalStorageAddBasketItem from "./LocalStorage";
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
-import { countItem } from "./TableComponent";
 import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
     const array = props.row;
-
-    const basketItem = JSON.parse(localStorage.getItem("basket_item"));
-    console.log(basketItem);
-
 
     return (  
         array.map((row) =>   
@@ -27,14 +22,16 @@ function TableComponentRow (props) {
                     <div className="table-component-result__heading_right">
                         <div className="tcrh__availability w-70px">{row.availability} шт.</div>
                         <div className="tcrh__price w-70px" id={"tcrh__price_" + row.id}>{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(row.price))}</div>
-                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}></input>
+                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}/>
                         <button onClick={()=>  ButtonOnClick(row.id)} className="tcrh__button" id={"tcrh__button_" + row.id} key={"button_" + row.id}>Добавить</button>     
                     </div>
                 </div>
             </div>
-        )
+        )   
     )
 }
+
+
 
 export default TableComponentRow;
 
