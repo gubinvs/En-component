@@ -5,39 +5,17 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
-    const basket = [];
+    
     const array = props.row; // Массив данных с сервера
+    
+    const basket = [];
     // массив данных из браузера о товарах добавленных в корзину
     if (localStorage.getItem("basket_item") != null) {
-        JSON.parse(localStorage.getItem("basket_item")).forEach(
-            (el) => {
-                basket.vendor = el.vendor,
-                basket.value = el.value
-            }
-        )
- 
+        basket.push(JSON.parse(localStorage.getItem("basket_item")));
+        
     };
 
-    console.log(basket)
-   
-    array.forEach(
-        (elArray) => {
-            basket.forEach(
-                (elBasket) => {
-                    if(elArray.vendor == elBasket.vendor) {
-                        elArray.check = "true",
-                        elArray.defaultValue = elBasket.value,
-                        elArray.className = "tcrh__button tcrh__button_add-basket"
-                        console.log("Есть совпадение")
-                        
-                    };
-                    console.log("Корзина = " + elBasket.vendor)
-                }
-            )
-            console.log("Массив = " + elArray.vendor)
-            
-        }
-    );
+    MarkAddedToBasket (array, basket);
 
     return (  
         array.map((row) =>   
@@ -85,17 +63,17 @@ function ButtonOnClick (count) {
 function MarkAddedToBasket (array, basket) {
     array.forEach(
         (elArray) => {
+            let count = 0;
             basket.forEach(
                 (elBasket) => {
-                    if(elArray.vendor == elBasket.vendor) {
-                        {
-                            elArray.check = checked,
-                            elArray.defaultValue = elBasket.value,
-                            elArray.className = "tcrh__button tcrh__button_add-basket"
-                        }
+                    if(elArray.vendor == elBasket[count].vendor) {
+                        elArray.check = "true",
+                        elArray.defaultValue = elBasket[count].value,
+                        elArray.className = "tcrh__button tcrh__button_add-basket"
+                        count++;
                     };
                 }
-            )
+            )  
         }
     );
 }
