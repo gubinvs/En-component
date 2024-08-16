@@ -1,6 +1,6 @@
 const basketItem = [];
 const json = localStorage.getItem("basket_item");
-basketItem.push(JSON.parse(json));
+//basketItem.push(JSON.parse(json));
 
 
 function AddBasketItemLocalStorage(count) {

@@ -3,12 +3,14 @@
 export const comp = [
     {
         id : 1,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 1,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 2,
@@ -17,7 +19,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 2,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 3,
@@ -26,7 +30,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 3,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 4,
@@ -35,7 +41,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 4,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 5,
@@ -44,7 +52,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 5,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 6,
@@ -53,7 +63,11 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 6,
-        price : "3532,56"
+        price : "3532,56",
+        defaultVolume : "",
+        className : "tcrh__button",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 7,
@@ -62,7 +76,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 7,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 8,
@@ -71,7 +87,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 8,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 9,
@@ -80,7 +98,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 9,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 10,
@@ -89,7 +109,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 10,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 11,
@@ -98,7 +120,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 11,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 12,
@@ -107,7 +131,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 12,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 13,
@@ -116,7 +142,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 13,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 14,
@@ -125,7 +153,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 14,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 15,
@@ -134,7 +164,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 15,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 16,
@@ -143,7 +175,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 16,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 17,
@@ -152,7 +186,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 17,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 18,
@@ -161,7 +197,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 18,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 19,
@@ -170,7 +208,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 19,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 20,
@@ -179,7 +219,9 @@ export const comp = [
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
         availability : 20,
-        price : "999,06"
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 21,
@@ -188,7 +230,9 @@ export const comp = [
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
         availability : 21,
-        price : "3532,56"
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 22,
@@ -197,7 +241,9 @@ export const comp = [
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 22,
-        price : "6156,12"
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 23,
@@ -205,8 +251,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 23,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 24,
@@ -214,8 +262,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 24,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 25,
@@ -223,8 +273,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 25,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 26,
@@ -232,8 +284,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 26,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 27,
@@ -241,8 +295,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 27,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 28,
@@ -250,8 +306,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 28,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 29,
@@ -259,8 +317,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 29,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 30,
@@ -268,8 +328,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 30,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 31,
@@ -277,8 +339,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 31,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 32,
@@ -286,8 +350,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 32,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 33,
@@ -295,8 +361,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 33,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 34,
@@ -304,8 +372,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 34,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 35,
@@ -313,8 +383,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 35,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 36,
@@ -322,8 +394,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 36,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 37,
@@ -331,8 +405,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 37,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 38,
@@ -340,8 +416,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 38,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 39,
@@ -349,8 +427,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 39,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 40,
@@ -358,8 +438,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 40,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 41,
@@ -367,8 +449,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 41,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 42,
@@ -376,8 +460,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 42,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 43,
@@ -385,8 +471,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 43,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 44,
@@ -394,8 +482,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 44,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 45,
@@ -403,8 +493,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 45,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     },
         {
         id : 46,
@@ -412,8 +504,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
-        availability : 20,
-        price : "6156,12"
+        availability : 46,
+        price : "6156,12",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 47,
@@ -421,8 +515,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/eSDjQjyD-g7ndy_FZgvp-w5Wj11Tj2BrCxNWW3u90Hw/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzNmOTllMDQzODdjODJlZDY5NzU5MWVlYmM2N2IyOGNjOTY4NDIyMDYzYTFkZjkwNTZiYzQ0NDA1MTYxNmM5YWEucG5n",
         vendor : "MVA20-1-D25-C",
         name : "KARAT Автоматический выключатель ВА47-29 1P C 2,5А 4,5кА IEK",
-        availability : 58,
-        price : "999,06"
+        availability : 47,
+        price : "999,06",
+        defaultValue : "",
+        className : "tcrh__button"
     },
     {
         id : 48,
@@ -430,8 +526,10 @@ export const comp = [
         images : "https://cdn-02.iek.ru/imgproxy/vwDBtLg2Pu27WOOUipKoYfiqWjYJOPI8qIfbzqJa1EM/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzMyZWVkMThiYzA3OGVhY2ExNDA4OWY0NWU2ODZkYzg3ZGNjZjI0N2Q3ZWNjNzJhNDFkNzA5YjQ4OGRhZTQ2MTQucG5n",
         vendor : "AR-M06N-3-B008",
         name : "ARMAT Автоматический выключатель M06N 3P B 8А IEK",
-        availability : 18,
-        price : "3532,56"
+        availability : 48,
+        price : "3532,56",
+        defaultValue : "",
+        className : "tcrh__button"
     }
 ]
 

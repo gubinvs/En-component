@@ -5,13 +5,18 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
-    const array = props.row;
+    
+    const array = props.row; // Массив данных с сервера
+    const basket = JSON.parse(localStorage.getItem("basket_item")); // массив данных из браузера о товарах добавленных в корзину
+
+    MarkAddedToBasket (array, basket);
+
     return (  
         array.map((row) =>   
             <div className="table-component-result">
                 <div className="table-component-result__heading">
                     <div className="table-component-result__heading_left">
-                        <input onClick={() => ClickCheck(row.id)} type="checkbox" className="tcrh__check" id={"tcrh__check_" + row.id} key={"check_" + row.id}></input>
+                        <input onClick={() => ClickCheck(row.id)} type="checkbox" checked={row.check} className="tcrh__check" id={"tcrh__check_" + row.id} key={"check_" + row.id} />
                         <a href={row.images} target="blank">
                             <img src={row.images} alt="Картинка" className="tcrh__img"></img>
                         </a>
@@ -21,8 +26,8 @@ function TableComponentRow (props) {
                     <div className="table-component-result__heading_right">
                         <div className="tcrh__availability w-70px">{row.availability} шт.</div>
                         <div className="tcrh__price w-70px" id={"tcrh__price_" + row.id}>{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(row.price))}</div>
-                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}/>
-                        <button onClick={()=>  ButtonOnClick(row.id)} className="tcrh__button" id={"tcrh__button_" + row.id} key={"button_" + row.id}>Добавить</button>     
+                        <input onClick={() => CheckTheBox(row.id)} type="number" min="0" defaultValue={row.defaultValue} className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}/>
+                        <button onClick={()=>  ButtonOnClick(row.id)} className={row.className} id={"tcrh__button_" + row.id} key={"button_" + row.id}>Добавить</button>     
                     </div>
                 </div>
             </div>
@@ -47,4 +52,23 @@ function ButtonOnClick (count) {
         //LocalStorageAddBasketItem(countItem);
         AddBasketItemLocalStorage(count);
     }
+}
+
+function MarkAddedToBasket (array ,basket) {
+
+    array.forEach(
+        (elArray) => {
+            basket.forEach(
+                (elBasket) => {
+                    if(elArray.vendor == elBasket.vendor) {
+                        {
+                            elArray.check = true,
+                            elArray.defaultValue = elBasket.value,
+                            elArray.className = "tcrh__button tcrh__button_add-basket"
+                        }
+                    };
+                }
+            )
+        }
+    );
 }
