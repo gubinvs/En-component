@@ -65,8 +65,6 @@ export const comp = [
         availability : 6,
         price : "3532,56",
         defaultVolume : "",
-        className : "tcrh__button",
-        defaultValue : "",
         className : "tcrh__button"
     },
     {

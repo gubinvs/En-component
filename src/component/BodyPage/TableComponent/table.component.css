@@ -100,6 +100,12 @@
     width: 120px;
 }
 
+.nav-page-list__number-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .nav-page-list {
     display: flex;
     align-items: center;
