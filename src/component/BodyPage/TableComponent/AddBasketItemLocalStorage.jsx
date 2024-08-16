@@ -4,8 +4,6 @@ const json = localStorage.getItem("basket_item");
 
 
 function AddBasketItemLocalStorage(count) {
-    
-
     const vendorCode = document.getElementById('tcrh__vendor_' + count);
     const itemValue = document.getElementById("tcrh__count_" + count)
 
