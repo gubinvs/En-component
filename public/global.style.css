@@ -40,7 +40,7 @@ body {
 }
 
 .window-none {
-    display: none;
+    display: none !important;
 }
 
 .mr-20 {

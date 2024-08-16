@@ -36,7 +36,7 @@ export const comp = [
     },
         {
         id : 4,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -69,7 +69,7 @@ export const comp = [
     },
     {
         id : 7,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -102,7 +102,7 @@ export const comp = [
     },
         {
         id : 10,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -135,7 +135,7 @@ export const comp = [
     },
         {
         id : 13,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -168,7 +168,7 @@ export const comp = [
     },
         {
         id : 16,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -201,7 +201,7 @@ export const comp = [
     },
         {
         id : 19,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -234,7 +234,7 @@ export const comp = [
     },
         {
         id : 22,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -267,7 +267,7 @@ export const comp = [
     },
         {
         id : 25,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -300,7 +300,7 @@ export const comp = [
     },
         {
         id : 28,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -333,7 +333,7 @@ export const comp = [
     },
         {
         id : 31,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -366,7 +366,7 @@ export const comp = [
     },
         {
         id : 34,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -399,7 +399,7 @@ export const comp = [
     },
         {
         id : 37,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -432,7 +432,7 @@ export const comp = [
     },
         {
         id : 40,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -465,7 +465,7 @@ export const comp = [
     },
         {
         id : 43,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
@@ -498,7 +498,7 @@ export const comp = [
     },
         {
         id : 46,
-        check : true,
+        check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
         vendor : "MVA43-3-100-D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",

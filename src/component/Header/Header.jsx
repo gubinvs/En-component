@@ -1,6 +1,17 @@
 import './header.css'
 
-const Header = () => {
+function Header () {
+  let item = 0;
+  if (localStorage.getItem("basket_item") != null) {
+    const basket = JSON.parse(localStorage.getItem("basket_item"));
+    item = basket.length;
+  }
+
+  let className = "";
+  if (item == 0 || item == null) {
+    className = "window-none";
+  } 
+
   return (
     <>
       <div className='header-section'>
@@ -8,14 +19,17 @@ const Header = () => {
           <div id="user-avatar__title">Губин Владимир Сергеевич</div>
           <div id="user-avatar__company">ООО "Хэнди-Автомейшн"</div>
         </div>
-        <div className='header-icon-block'>
-          <img className='header-icon-block__icon' src="images/area-icon.svg" alt="Личный кабинет" />
-          <img className='header-icon-block__icon' src="images/package-icon.svg" alt="Доставка" />
-          <img className='header-icon-block__icon' src="images/basket-icon.svg" alt="Корзина" />
-        </div>
+        <ul className='header-icon-list'>
+          <li className='header-icon-block__item'><img className='header-icon-block__icon' src="images/area-icon.svg" alt="Личный кабинет" /></li>
+          <li className='header-icon-block__item'><img className='header-icon-block__icon' src="images/package-icon.svg" alt="Доставка" /></li>
+          <li className='header-icon-block__item header-icon-block__item_basket'>
+            <div className={className} id="icon-basket-count">{item}</div>
+            <img className='header-icon-block__icon' src="images/basket-icon.svg" alt="Корзина" />
+          </li>
+        </ul>
       </div>
     </>
   )
 };
 
-export default Header
+export default Header;

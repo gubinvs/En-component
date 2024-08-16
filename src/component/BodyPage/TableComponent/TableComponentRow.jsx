@@ -5,11 +5,39 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
-    
+    const basket = [];
     const array = props.row; // Массив данных с сервера
-    const basket = JSON.parse(localStorage.getItem("basket_item")); // массив данных из браузера о товарах добавленных в корзину
+    // массив данных из браузера о товарах добавленных в корзину
+    if (localStorage.getItem("basket_item") != null) {
+        JSON.parse(localStorage.getItem("basket_item")).forEach(
+            (el) => {
+                basket.vendor = el.vendor,
+                basket.value = el.value
+            }
+        )
+ 
+    };
 
-    MarkAddedToBasket (array, basket);
+    console.log(basket)
+   
+    array.forEach(
+        (elArray) => {
+            basket.forEach(
+                (elBasket) => {
+                    if(elArray.vendor == elBasket.vendor) {
+                        elArray.check = "true",
+                        elArray.defaultValue = elBasket.value,
+                        elArray.className = "tcrh__button tcrh__button_add-basket"
+                        console.log("Есть совпадение")
+                        
+                    };
+                    console.log("Корзина = " + elBasket.vendor)
+                }
+            )
+            console.log("Массив = " + elArray.vendor)
+            
+        }
+    );
 
     return (  
         array.map((row) =>   
@@ -54,15 +82,14 @@ function ButtonOnClick (count) {
     }
 }
 
-function MarkAddedToBasket (array ,basket) {
-
+function MarkAddedToBasket (array, basket) {
     array.forEach(
         (elArray) => {
             basket.forEach(
                 (elBasket) => {
                     if(elArray.vendor == elBasket.vendor) {
                         {
-                            elArray.check = true,
+                            elArray.check = checked,
                             elArray.defaultValue = elBasket.value,
                             elArray.className = "tcrh__button tcrh__button_add-basket"
                         }

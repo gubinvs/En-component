@@ -3,14 +3,38 @@
     justify-content: space-between;
 }
 
+.header-icon-list {
+    display: flex;
+}
+
+.header-icon-block__item:not(:last-of-type) {
+  margin-right: 8px;  
+}
+
 .header-icon-block__icon {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-.header-icon-block__icon:not(:last-of-type) {
-    margin-right: 8px;
+.header-icon-block__item_basket {
+    position: relative;
+}
+
+#icon-basket-count {
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    font-size: 8px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color:#E66A1B;
 }
 
 #user-avatar {
