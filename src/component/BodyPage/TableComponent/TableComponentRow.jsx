@@ -1,4 +1,3 @@
-import LocalStorageAddBasketItem from "./LocalStorage";
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
 import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
@@ -7,13 +6,11 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 function TableComponentRow (props) {
     //localStorage.clear() 
     
-
     const array = props.row; // Массив данных с сервера
     const basket = []; // массив данных в localStorage.getItem("basket_item")
     
     if (localStorage.getItem("basket_item") != null) {
         const json = JSON.parse(localStorage.getItem("basket_item"));
-        console.log(json);
         json.forEach((element) => {basket.push(element);});
     };
 

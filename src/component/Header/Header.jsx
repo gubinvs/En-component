@@ -1,20 +1,23 @@
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './header.css'
 
+
+
+
+
 function Header () {
-  let item = 0;
+  let [item, setItem] = useState(0); 
 
   if (localStorage.getItem("basket_item") != null) {
     const basket = JSON.parse(localStorage.getItem("basket_item"));
     item = basket.length;
-  } 
-
+  }
+  
   var className = "";
   if (item == 0 || item == null) {
     className = "window-none";
   } 
-
 
   return (
     <>
@@ -28,12 +31,13 @@ function Header () {
           <li className='header-icon-block__item'><img className='header-icon-block__icon' src="images/package-icon.svg" alt="Доставка" /></li>
           <li className='header-icon-block__item header-icon-block__item_basket'>
             <div className={className} id="icon-basket-count">{item}</div>
-            <img className='header-icon-block__icon' src="images/basket-icon.svg" alt="Корзина" />
+            <img onClick={()=>IncreaseValue()} className='header-icon-block__icon' src="images/basket-icon.svg" alt="Корзина"/>
           </li>
         </ul>
       </div>
     </>
   )
 };
+
 
 export default Header;
