@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './component/Header/Header'
 import SideNav from './component/SideNav/SideNav'
