@@ -5,14 +5,16 @@ import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
 
 
 function TableComponentRow (props) {
+    //localStorage.clear() 
     
+
     const array = props.row; // Массив данных с сервера
+    const basket = []; // массив данных в localStorage.getItem("basket_item")
     
-    const basket = [];
-    // массив данных из браузера о товарах добавленных в корзину
     if (localStorage.getItem("basket_item") != null) {
-        basket.push(JSON.parse(localStorage.getItem("basket_item")));
-        
+        const json = JSON.parse(localStorage.getItem("basket_item"));
+        console.log(json);
+        json.forEach((element) => {basket.push(element);});
     };
 
     MarkAddedToBasket (array, basket);
@@ -66,9 +68,9 @@ function MarkAddedToBasket (array, basket) {
             let count = 0;
             basket.forEach(
                 (elBasket) => {
-                    if(elArray.vendor == elBasket[count].vendor) {
+                    if(elArray.vendor == elBasket.vendor) {
                         elArray.check = "true",
-                        elArray.defaultValue = elBasket[count].value,
+                        elArray.defaultValue = elBasket.value,
                         elArray.className = "tcrh__button tcrh__button_add-basket"
                         count++;
                     };

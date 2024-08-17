@@ -1,16 +1,20 @@
+
+import { useEffect } from 'react';
 import './header.css'
 
 function Header () {
   let item = 0;
+
   if (localStorage.getItem("basket_item") != null) {
     const basket = JSON.parse(localStorage.getItem("basket_item"));
     item = basket.length;
-  }
+  } 
 
-  let className = "";
+  var className = "";
   if (item == 0 || item == null) {
     className = "window-none";
   } 
+
 
   return (
     <>
