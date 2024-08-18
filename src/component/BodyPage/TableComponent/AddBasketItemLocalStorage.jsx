@@ -65,7 +65,7 @@ function AddBasketItemLocalStorage(count) {
     } else {
         localStorage.setItem("basket_item", JSON.stringify(basket));
     }
-    
+  
 }
 
 export default AddBasketItemLocalStorage;

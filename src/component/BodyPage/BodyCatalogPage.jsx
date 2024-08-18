@@ -3,7 +3,7 @@ import "./body.catalog.page.css";
 import TitlePage from "./TitlePage/TitlePage";
 import FilterBlock from "./FilterBlock/FilterBlock"
 import TableComponentBody  from "./TableComponent/TableComponent";
-import { comp  } from "../../Data/ItemComponent";
+import { comp } from "../../Data/ItemComponent";
 
 function BodyCatalogPage (props) {
 

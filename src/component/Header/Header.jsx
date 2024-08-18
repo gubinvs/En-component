@@ -2,11 +2,11 @@
 import { useEffect, useState } from 'react';
 import './header.css'
 
+
 function Header () {
   if (localStorage.getItem("basket_item") != null) {
       const [basket, setBasket] = useState(JSON.parse(localStorage.getItem("basket_item")));
-      const [item, setItem] = useState(basket.length);  
-        
+      const [item, setItem] = useState(basket.length); 
 
       return (
         <HeaderSection item={item} className=""/>
@@ -17,7 +17,6 @@ function Header () {
       )
   }
 };
-
 
 export default Header;
 
@@ -44,3 +43,5 @@ function HeaderSection (props) {
   )
 
 }
+
+

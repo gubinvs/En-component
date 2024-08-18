@@ -1,7 +1,6 @@
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
 import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
-import {UpdateBasketIcon} from "../../Header/Header"
 
 
 function TableComponentRow (props) {
@@ -33,7 +32,7 @@ function TableComponentRow (props) {
                         <div className="tcrh__availability w-70px">{row.availability} шт.</div>
                         <div className="tcrh__price w-70px" id={"tcrh__price_" + row.id}>{Intl.NumberFormat("ru", {style: "currency", currency: "RUB"}).format(parseFloat(row.price))}</div>
                         <input onClick={() => CheckTheBox(row.id)} type="number" min="0" defaultValue={row.defaultValue} className="tcrh__count tcrh-count__body" id={"tcrh__count_" + row.id} key={"count_" + row.id}/>
-                        <button onClick={()=>  ButtonOnClick(row.id)} className={row.className} id={"tcrh__button_" + row.id} key={"button_" + row.id}>Добавить</button>     
+                        <button onClick={()=>  ButtonOnClick(row.id)} className={row.className} id={"tcrh__button_" + row.id} key={"button_" + row.id}>{row.tiketTheButton}</button>     
                     </div>
                 </div>
             </div>
@@ -71,7 +70,8 @@ function MarkAddedToBasket (array, basket) {
                     if(elArray.vendor == elBasket.vendor) {
                         elArray.check = "true",
                         elArray.defaultValue = elBasket.value,
-                        elArray.className = "tcrh__button tcrh__button_add-basket"
+                        elArray.className = "tcrh__button tcrh__button_add-basket",
+                        elArray.tiketTheButton = "В корзине"
                         count++;
                     };
                 }
