@@ -1,6 +1,7 @@
 import ClickCheck from "./ClickCheck";
 import CheckTheBox from "./CheckTheBox";
 import AddBasketItemLocalStorage from "./AddBasketItemLocalStorage";
+import {UpdateBasketIcon} from "../../Header/Header"
 
 
 function TableComponentRow (props) {
@@ -56,6 +57,8 @@ function ButtonOnClick (count) {
         // - countItem - всего элементов в массиве
         //LocalStorageAddBasketItem(countItem);
         AddBasketItemLocalStorage(count);
+        // Обновить ярлык корзины
+
     }
 }
 
