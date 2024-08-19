@@ -57,6 +57,7 @@ function ButtonOnClick (count) {
         //LocalStorageAddBasketItem(countItem);
         AddBasketItemLocalStorage(count);
         // Обновить ярлык корзины
+        location.reload();
 
     }
 }

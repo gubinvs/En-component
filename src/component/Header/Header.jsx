@@ -1,13 +1,11 @@
-
 import { useEffect, useState } from 'react';
 import './header.css'
-
 
 function Header () {
 
   if (localStorage.getItem("basket_item") != null) {
-      const [basket, setBasket] = useState(JSON.parse(localStorage.getItem("basket_item")));
-      const [item, setItem] = useState(basket.length); 
+      const basket = JSON.parse(localStorage.getItem("basket_item"));
+      const item = basket.length; 
 
       return (
         <HeaderSection item={item} className=""/>
@@ -23,7 +21,7 @@ export default Header;
 
 function HeaderSection (props) {
   let item = props.item;
-  var cl = props.className;
+  var clas = props.className;
   return (
     <>
       <div className='header-section'>
@@ -35,7 +33,7 @@ function HeaderSection (props) {
           <li className='header-icon-block__item'><img className='header-icon-block__icon' src="images/area-icon.svg" alt="Личный кабинет" /></li>
           <li className='header-icon-block__item'><img className='header-icon-block__icon' src="images/package-icon.svg" alt="Доставка" /></li>
           <li className='header-icon-block__item header-icon-block__item_basket'>
-            <div className={cl} id="icon-basket-count">{item}</div>
+            <div className={clas} id="icon-basket-count">{item}</div>
             <img className='header-icon-block__icon' src="images/basket-icon.svg" alt="Корзина"/>
           </li>
         </ul>
