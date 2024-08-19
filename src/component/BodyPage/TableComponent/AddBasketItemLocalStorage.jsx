@@ -63,9 +63,7 @@ function AddBasketItemLocalStorage(count) {
         localStorage.removeItem("basket_item");
     } else {
         localStorage.setItem("basket_item", JSON.stringify(basket));
-    }
-    const b = document.getElementById("a");
-    b.innerHTML = 5;   
+    } 
    
 }
 
