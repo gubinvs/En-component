@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './component/Header/Header'
 import SideNav from './component/SideNav/SideNav'
 import SideNavMin from './component/SideNav/SideNavMin'
 import BodyCatalogPage from './component/BodyPage/BodyCatalogPage'
-
 
 
 ReactDOM.createRoot(document.getElementById('side-navigation-min')).render(
@@ -25,14 +24,9 @@ ReactDOM.createRoot(document.getElementById('header')).render(
   </React.StrictMode>
 )
 
-ReactDOM.createRoot(document.getElementById('main-catalog')).render(
+ReactDOM.createRoot(document.getElementById('main')).render(
   <React.StrictMode>
     <BodyCatalogPage title="Каталог комплектующих" discr="для производства щитов управления"/>
   </React.StrictMode>,
 )
 
-ReactDOM.createRoot(document.getElementById('footer')).render(
-  <React.StrictMode>
-   
-  </React.StrictMode>,
-)
