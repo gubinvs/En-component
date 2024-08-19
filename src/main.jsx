@@ -18,12 +18,6 @@ ReactDOM.createRoot(document.getElementById('side-navigation')).render(
   </React.StrictMode>,
 )
 
-// ReactDOM.createRoot(document.getElementById('header')).render(
-//   <React.StrictMode>
-//    <Header/>
-//   </React.StrictMode>
-// )
-
 ReactDOM.createRoot(document.getElementById('main')).render(
   <React.StrictMode>
     <BodyCatalogPage title="Каталог комплектующих" discr="для производства щитов управления"/>

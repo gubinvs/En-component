@@ -3,11 +3,14 @@ import { useEffect, useState } from 'react';
 import './header.css'
 
 
-function Header () {
+function Header (props) {
+  let count = props.count;
+  console.log(count)
 
   if (localStorage.getItem("basket_item") != null) {
       const [basket, setBasket] = useState(JSON.parse(localStorage.getItem("basket_item")));
       const [item, setItem] = useState(basket.length); 
+
       return (
         <HeaderSection item={item} className=""/>
       )

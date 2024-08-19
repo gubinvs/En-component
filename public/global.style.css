@@ -22,11 +22,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.header {
-    padding-top: 10px;
-    margin-bottom: 20px;
-}
-
 .application {
     display: flex;
     max-width: 1920px;

@@ -1,6 +1,8 @@
 .header-section {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .header-icon-list {
