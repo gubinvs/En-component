@@ -9,16 +9,15 @@ import { useEffect, useState } from "react";
 
 
 
-
+let a = 0;
 
 function BodyCatalogPage (props) {
-    let a = document.getElementById("a").innerHTML;
+    
     let [count, setCount] = useState(0);
     useEffect(()=>{
       setCount(count +1)
       },[a]
     );
-
 
     return (
         <>
