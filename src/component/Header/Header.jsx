@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react';
 import './header.css'
 
 
-function Header (props) {
-  let count = props.count;
-  console.log(count)
+function Header () {
 
   if (localStorage.getItem("basket_item") != null) {
       const [basket, setBasket] = useState(JSON.parse(localStorage.getItem("basket_item")));

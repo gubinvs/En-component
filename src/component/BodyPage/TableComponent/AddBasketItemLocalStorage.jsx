@@ -1,6 +1,7 @@
 
 
 function AddBasketItemLocalStorage(count) {
+    
     const basket = [];
     if (localStorage.getItem("basket_item") != null) {
         const json = JSON.parse(localStorage.getItem("basket_item"));
@@ -58,15 +59,12 @@ function AddBasketItemLocalStorage(count) {
             item = item + elememt.value
         }
     });
-
+    
     if (item == 0) {
         localStorage.removeItem("basket_item");
     } else {
         localStorage.setItem("basket_item", JSON.stringify(basket));
     } 
-
-    return (()=> a = 2)
-   
 }
 
 export default AddBasketItemLocalStorage;
