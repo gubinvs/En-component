@@ -8,7 +8,6 @@ import { comp } from "../../Data/ItemComponent";
 
 
 
-
 function BodyCatalogPage (props) {
 
     return (

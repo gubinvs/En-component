@@ -2,6 +2,7 @@ import "./filter.block.css";
 import SearchBlock from "../TitlePage/SearchBlock";
 
 function FilterBlock ()  {
+
     return (
         <>
             <div className="filter-block">
