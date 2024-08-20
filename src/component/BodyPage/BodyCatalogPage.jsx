@@ -7,6 +7,12 @@ import TableComponentBody  from "./TableComponent/TableComponent";
 import { comp } from "../../Data/ItemComponent";
 
 
+// Будующая функция запроса данных API
+const DataRequest = () => {
+  const component = comp;
+  return component;
+}
+
 
 function BodyCatalogPage (props) {
 
@@ -17,7 +23,7 @@ function BodyCatalogPage (props) {
             <TitlePage title={props.title} discr={props.discr} />
           </div>
           <FilterBlock />
-          <TableComponentBody item={comp} />
+          <TableComponentBody item={DataRequest()} />
         </>
     )
 
