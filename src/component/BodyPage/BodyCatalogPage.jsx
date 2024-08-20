@@ -5,7 +5,7 @@ import TitlePage from "./TitlePage/TitlePage";
 import FilterBlock from "./FilterBlock/FilterBlock"
 import TableComponentBody  from "./TableComponent/TableComponent";
 import { comp } from "../../Data/ItemComponent";
-import { useEffect, useState } from "react";
+
 
 
 
@@ -19,7 +19,6 @@ function BodyCatalogPage (props) {
           </div>
           <FilterBlock />
           <TableComponentBody item={comp} />
-          
         </>
     )
 

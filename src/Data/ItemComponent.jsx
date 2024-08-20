@@ -5,7 +5,7 @@ export const comp = [
         id : 1,
         check : false,
         images : "https://cdn-02.iek.ru/imgproxy/NfWhz53h4sm4_0POJbBh5mBRvkO--dzjoA44rlJhdT8/aHR0cHM6Ly9jZG4tMDEuaWVrLnJ1L21lZGlhL29yaWdpbmFsLzlmY2Q2MDNjZTBjMGZhYjYyMTg3M2FhNTViMDFiMWM2NjdkODllYjVlODM0YjBmYWY5OTFhZTMxYjc1YjAyYTIucG5n",
-        vendor : "MVA43-3-100-D",
+        vendor : "D",
         name : "Выключатель автоматический ВА47-100МА без теплового расцепителя 3P 100А 10кА D IEK",
         availability : 1,
         price : "6156,12",
