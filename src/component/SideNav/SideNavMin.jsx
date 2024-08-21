@@ -25,7 +25,7 @@ function SideNavMin() {
             <div onClick={activateBar} id="nav-icon"></div>
             <ul id="ul-icon-bar"> 
                 {
-                   item.map((item) => <li id={item.idIcon}><a href={item.link} title={item.name}><img src={item.linkIcon} alt={item.name} /></a></li>) 
+                   item.map((item) => <li key={item.idIcon} id={item.idIcon}><a href={item.link} title={item.name}><img src={item.linkIcon} alt={item.name} /></a></li>) 
                 }
             </ul>
         </>

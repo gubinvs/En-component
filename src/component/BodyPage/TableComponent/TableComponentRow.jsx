@@ -18,10 +18,10 @@ function TableComponentRow (props) {
 
     return (  
         array.map((row) =>   
-            <div className="table-component-result">
+            <div key={row.id} className="table-component-result">
                 <div className="table-component-result__heading">
                     <div className="table-component-result__heading_left">
-                        <input onClick={() => ClickCheck(row.id)} type="checkbox" checked={row.check} className="tcrh__check" id={"tcrh__check_" + row.id} key={"check_" + row.id} />
+                        <input onClick={() => ClickCheck(row.id)} type="checkbox" defaultChecked={row.check} className="tcrh__check" id={"tcrh__check_" + row.id} key={"check_" + row.id} />
                         <a href={row.images} target="blank">
                             <img src={row.images} alt="Картинка" className="tcrh__img"></img>
                         </a>

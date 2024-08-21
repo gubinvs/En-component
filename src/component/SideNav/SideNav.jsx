@@ -19,7 +19,7 @@ function SideNav() {
         <ul className="ul-icon-bar_big">
             {
                 item.map(
-                    (item) => <li className={item.clsName}  id={item.id}><a href={item.link}>{item.name}</a></li>
+                    (item) => <li key={item.idIcon} className={item.clsName}  id={item.id}><a href={item.link}>{item.name}</a></li>
                 )
             }
         </ul>
