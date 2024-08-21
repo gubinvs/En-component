@@ -1,5 +1,6 @@
 import "./filter.block.css";
 import SearchBlock from "../TitlePage/SearchBlock";
+import { regust } from "../BodyCatalogPage";
 
 function FilterBlock ()  {
 
@@ -12,7 +13,7 @@ function FilterBlock ()  {
                         <option className="filter-select-block__option">EKF</option>
                         <option className="filter-select-block__option">DKC</option>
                     </select>
-                    <button  className="filter-select-block__button">Применить фильтр</button>
+                    <button onClick={()=>regust()}  className="filter-select-block__button">Применить фильтр</button>
                 </div>
                 <SearchBlock />
                 {/* <div className="filter-block__button">Добавить выбранное</div> */}
