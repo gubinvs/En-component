@@ -11,11 +11,10 @@ export const regust = () => {
   fetch('http://localhost:5020/api/RequestDataIekItem', {
     method: 'GET',
     ContentType: 'text/json; charset=utf-8',
-    // Тело запроса ,в данном случае объект формы (файл)
-    body: 'text/json'
+
 
         }).then(function(response) {
-            console.log(response);
+            console.log(response.text());
             // Стоит проверить код ответа.
             if (!response.ok) {
                 // Сервер вернул код ответа за границами диапазона [200, 299]
