@@ -1,4 +1,6 @@
-// Функция обнуляет input с количеством товара в строке таблицы при изменении статуса checkbox в строке товара и изменяет кнопку добавить
+// Функция обнуляет input с количеством товара в строке таблицы при 
+// изменении статуса checkbox в строке товара и изменяет кнопку добавить
+
 function ClickCheck(count) {
     const checkItem = document.getElementById('tcrh__check_' + count);
     const buttonItem = document.getElementById("tcrh__button_" + count);
@@ -13,6 +15,8 @@ function ClickCheck(count) {
         buttonItem.className = "tcrh__button tcrh__button_add-value"
         buttonItem.innerHTML = "Добавить";
     }
+
+    // Перезаписываем данные в LocalStorage = относительно количества товров в корзине
 
 };
 
